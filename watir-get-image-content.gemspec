@@ -4,8 +4,8 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "watir-get-image-content"
-  spec.version       = "0.0.2"
-  spec.authors       = ["orangeudav"]
+  spec.version       = "0.0.3"
+  spec.authors       = ["orangeudav","galaad-gauthier"]
   spec.email         = ["orangeudav@gmail.com"]
   spec.description   = %q{Get Watir::Image's content copy without external download}
   spec.summary       = %q{Get Watir::Image's content copy without external download}
