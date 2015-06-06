@@ -10,7 +10,7 @@ module Watir
               canvas.height = #{self.natural_height};
               var ctx = canvas.getContext('2d');
               var ctx = canvas.getContext('2d');
-              ctx.drawImage($("img"), 0, 0);
+              ctx.drawImage($('img'), 0, 0);
               var dataURL = canvas.toDataURL('image/png');
               dataURL.replace(/^data:image\/(png|jpg|gif);base64\,/,"");
             "
