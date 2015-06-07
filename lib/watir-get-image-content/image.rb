@@ -12,7 +12,12 @@ module Watir
       var dataURL = canvas.toDataURL('image/png');
       return dataURL.replace(/^data:image\\/(png|jpg|gif);base64\\,/,\"\");
       "
-      driver.execute_script js, @element
+      begin
+        driver.execute_script js, @element
+      rescue => error
+        puts error
+        return nil
+      end
     end
 
   end
